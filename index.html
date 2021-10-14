@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techical Documentation Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @media (max-width: 776px) {
+        nav {
+          position: sticky;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 15vh;
+          z-index: 1;
+          overflow: scroll;
+          border-right: none;
+          border-bottom: 2px solid rgb(75, 72, 72);
+        }
+        nav ul li {
+          padding: 0.6rem;
+        }
+        main {
+          margin-left: 0;
+          padding: 0.3rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>HTML, CSS and JS documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#HTML">HTML</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#HTML_Elements">HTML Elements</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#CSS:_Cascading_Style_Sheets"
+            >CSS: Cascading Style Sheets</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#CSS_selectors">CSS selectors</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#CSS_layout">CSS layout</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#CSS_values_and_units"
+            >CSS values and units</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#JavaScript">JavaScript</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#A_first_splash_into_JavaScript"
+            >A first splash into JavaScript</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Looping_code">Looping code</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#JavaScript_object_basics"
+            >JavaScript object basics</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section id="HTML" class="main-section">
+        <header>HTML</header>
+        <p>
+          HTML (HyperText Markup Language) is the most basic building block of
+          the Web. It defines the meaning and structure of web content. Other
+          technologies besides HTML are generally used to describe a web page's
+          appearance/presentation (CSS) or functionality/behavior (JavaScript).
+        </p>
+        <p>
+          "Hypertext" refers to links that connect web pages to one another,
+          either within a single website or between websites. Links are a
+          fundamental aspect of the Web. By uploading content to the Internet
+          and linking it to pages created by other people, you become an active
+          participant in the World Wide Web.
+        </p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          >MDN Web Docs</a
+        >
+      </section>
+      <section id="HTML_Elements" class="main-section">
+        <header>HTML Elements</header>
+        <p>
+          HTML uses "markup" to annotate text, images, and other content for
+          display in a Web browser. HTML markup includes special "elements" such
+          as:
+        </p>
+        <ul>
+          <li>&lt;head&gt;</li>
+          <li>&lt;title&gt;</li>
+          <li>&lt;body&gt;</li>
+          <li>&lt;header&gt;</li>
+          <li>&lt;footer&gt;</li>
+          <li>&lt;article&gt;</li>
+          <li>&lt;section&gt;</li>
+          <li>&lt;div&gt;</li>
+          <li>&lt;span&gt;</li>
+          <li>&lt;img&gt;</li>
+        </ul>
+        <p>and many others.</p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          >MDN Web Docs</a
+        >
+      </section>
+      <section id="CSS:_Cascading_Style_Sheets" class="main-section">
+        <header>CSS: Cascading Style Sheets</header>
+        <p>
+          Cascading Style Sheets (CSS) is a stylesheet language used to describe
+          the presentation of a document written in HTML or XML (including XML
+          dialects such as SVG, MathML or XHTML). CSS describes how elements
+          should be rendered on screen, on paper, in speech, or on other media.
+        </p>
+        <p>
+          CSS (Cascading Style Sheets) is used to style and layout web pages —
+          for example, to alter the font, color, size, and spacing of your
+          content, split it into multiple columns, or add animations and other
+          decorative features. This module provides a gentle beginning to your
+          path towards CSS mastery with the basics of how it works, what the
+          syntax looks like, and how you can start using it to add styling to
+          HTML.
+        </p>
+        <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+      </section>
+      <section id="CSS_selectors" class="main-section">
+        <header>CSS selectors</header>
+        <p>
+          In CSS, selectors are used to target the HTML elements on our web
+          pages that we want to style. There are a wide variety of CSS selectors
+          available, allowing for fine-grained precision when selecting elements
+          to style. In this article and its sub-articles we'll run through the
+          different types in great detail, seeing how they work.
+        </p>
+        <p>
+          You have met selectors already. A CSS selector is the first part of a
+          CSS Rule. It is a pattern of elements and other terms that tell the
+          browser which HTML elements should be selected to have the CSS
+          property values inside the rule applied to them. The element or
+          elements which are selected by the selector are referred to as the
+          subject of the selector.
+        </p>
+        <pre>
+        <code>
+          h1 { 
+            color: blue; 
+            background: geen; 
+          } 
+          p { 
+            font-size: 2rem; 
+          }
+        </code>
+      </pre>
+        <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+      </section>
+      <section id="CSS_layout" class="main-section">
+        <header>CSS layout</header>
+        <p>
+          At this point, we've looked at CSS fundamentals, how to style text,
+          and how to style and manipulate the boxes that your content sits
+          inside. Now it's time to look at how to correctly arrange your boxes
+          in relation to the viewport as well as to one another. We've covered
+          the necessary prerequisites, so let's dive deep into CSS layout,
+          looking at such various features as: different display settings,
+          positioning, modern layout tools like flexbox and CSS grid, and some
+          of the legacy techniques you might still want to know about.
+        </p>
+        <p>
+          CSS page layout techniques allow us to take elements contained in a
+          web page and control where they're positioned relative to the
+          following factors: their default position in normal layout flow, the
+          other elements around them, their parent container, and the main
+          viewport/window. The page layout techniques we'll be covering in more
+          detail in this module are:
+        </p>
+        <ul>
+          <li>Normal flow</li>
+          <li>The display property</li>
+          <li>Flexbox</li>
+          <li>Normal flow</li>
+          <li>Grid</li>
+          <li>Floats</li>
+        </ul>
+        <pre>
+        <code>
+          .wrapper { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+          }
+        </code>
+      </pre>
+        <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+      </section>
+      <section id="CSS_values_and_units" class="main-section">
+        <header>CSS values and units</header>
+        <p>
+          Every property used in CSS has a value type defining the set of values
+          that are allowed for that property. Taking a look at any property page
+          on MDN will help you understand the values associated with a value
+          type that are valid for any particular property. In this lesson we
+          will take a look at some of the most frequently used value types, and
+          their most common values and units.
+        </p>
+        <p>
+          In the following example, we have set the color of our heading using a
+          keyword, and the background using the rgb() function:
+        </p>
+        <pre>
+        <code> 
+          h1 { 
+            color: black; 
+            background-color: rgb(197,93,161); 
+          } 
+        </code>
+      </pre>
+        <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+      </section>
+      <section id="JavaScript" class="main-section">
+        <header>JavaScript</header>
+        <p>
+          JavaScript is a programming language that allows you to implement
+          complex things on web pages. Every time a web page does more than just
+          sit there and display static information for you to look at—displaying
+          timely content updates, interactive maps, animated 2D/3D graphics,
+          scrolling video jukeboxes, or more—you can bet that JavaScript is
+          probably involved.
+        </p>
+        <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+      </section>
+      <section id="A_first_splash_into_JavaScript" class="main-section">
+        <header>A first splash into JavaScript</header>
+        <p>
+          Now you've learned something about the theory of JavaScript and what
+          you can do with it, we are going to give you an idea of what the
+          process of creating a simple JavaScript program is like, by guiding
+          you through a practical tutorial. Here you'll build up a simple "Guess
+          the number" game, step by step.
+        </p>
+        <pre>
+        <code>
+          let randomNumber = Math.floor(Math.random() * 100) + 1; 
+          const guesses = document.querySelector('.guesses'); 
+          const lastResult = document.querySelector('.lastResult'); 
+          const lowOrHi = document.querySelector('.lowOrHi'); 
+          const guessSubmit = document.querySelector('.guessSubmit'); 
+          const guessField = document.querySelector('.guessField'); 
+          let guessCount = 1; 
+          let resetButton;
+        </code>
+      </pre>
+        <pre>
+        <code>
+          function checkGuess() { 
+            alert('I am a placeholder');
+          } 
+          checkGuess();
+        </code>
+      </pre>
+        <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+      </section>
+      <section id="Looping_code" class="main-section">
+        <header>Looping code</header>
+        <p>
+          Programming languages are very useful for rapidly completing
+          repetitive tasks, from multiple basic calculations to just about any
+          other situation where you've got a lot of similar items of work to
+          complete. Here we'll look at the loop structures available in
+          JavaScript that handle such needs.
+        </p>
+        <pre>
+        <code>
+          for (let i = 0; i &lg; 100; i++) { 
+            ctx.beginPath(); 
+            ctx.fillStyle = 'rgba(255,0,0,0.5)';
+            ctx.arc(random(WIDTH), random(HEIGHT),random(50), 0, 2 * Math.PI); ctx.fill(); 
+          }
+        </code>
+      </pre>
+        <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+      </section>
+      <section id="JavaScript_object_basics" class="main-section">
+        <header>JavaScript object basics</header>
+        <p>
+          In this article, we'll look at fundamental JavaScript object syntax,
+          and revisit some JavaScript features that we've already seen earlier
+          in the course, reiterating the fact that many of the features you've
+          already dealt with are objects.
+        </p>
+        <pre>
+        <code>
+          const person = { 
+            name: ['Bob', 'Smith'],
+            age: 32, 
+            gender: 'male',
+            interests: ['music', 'skiing'], 
+            bio: function() { 
+              alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.'); 
+            }, 
+            greeting: function() { 
+              alert('Hi! I\'m ' + this.name[0] + '.'); 
+            } 
+          };
+        </code>
+      </pre>
+        <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
